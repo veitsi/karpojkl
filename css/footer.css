@@ -1,0 +1,25 @@
+footer {
+	background:#efeeee;
+}
+
+footer .bar_below_contacts {
+    background: #fafaef; 
+    max-width: 1140px;
+}
+
+footer .bar_below_contacts p {
+    color: #928ba2;
+    padding: 30px 0;
+    font-size: 20px;
+    margin: 0;
+}
+
+footer .bar_below_contacts span {
+    color: #333333;
+}
+
+footer .icon{
+    margin: auto;
+}
+
+

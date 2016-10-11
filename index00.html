@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- VT added for slider -->
+    <link rel="stylesheet" href="bower_components/jquery-ui/themes/base/jquery-ui.min.css">
+    <!-- Bootstrap -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/showreal.css" rel="stylesheet">
+    <link href="css/portfolio.css" rel="stylesheet">
+    <link href="css/price.css" rel="stylesheet">
+    <link href="css/review.css" rel="stylesheet">
+    <link href="css/contact.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+
+    <link href="html/header.html" rel="import">
+    <link href="html/showreal.html" rel="import">
+    <link href="html/portfolio.html" rel="import">
+    <link href="html/price.html" rel="import">
+    <link href="html/review.html" rel="import">
+    <link href="html/contact.html" rel="import">
+    <link href="html/footer.html" rel="import">
+
+    <title>KarpenkoArtProdaction</title>
+
+</head>
+
+<body>
+<header id="header">
+</header>
+
+<section>
+    <!--ShowReal-->
+    <div class="showreal" id="showreal">
+    </div>
+    <!--Portfolio-->
+    <div id="portfolio" class="portfolio">
+    </div>
+    <!--Price-->
+    <div id="price" class="price">
+    </div>
+    <!--Rewiew-->
+    <div class="review" id="review">
+    </div>
+    <div class="contact" id="contact">
+    </div>
+</section>
+
+<footer id="footer">
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!--<script src="bower_components/jquery/dist/jquery.min.js"></script>-->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="https://apis.google.com/js/platform.js"></script>
+<script src="bower_components/webcomponentsjs/HTMLImports.min.js"></script>
+
+
+
+<!--New Scripts-->
+
+<!-- jQuery -->
+<!--    <script src="js/jquery.js"></script>-->
+
+<!-- Bootstrap Core JavaScript -->
+<!--<script src="js/bootstrap.min.js"></script>-->
+
+<!--For showreel-->
+<!--    <script src="js/jquery-1.11.1.min.js"></script>-->
+<script src="js/device.min.js"></script> <!--OPTIONAL JQUERY PLUGIN-->
+<script src="js/jquery.mb.YTPlayer.js"></script>
+<script src="js/custom.js"></script>
+
+<!-- Scrolling Nav JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/scrolling-nav.js"></script>
+
+<!-- VT added for slider -->
+<script src="js/jquery-ui.min.js"></script>
+<!-- <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script> What is faster from CDN or from folder?-->
+
+<script>
+    function insertSection(section,i) {
+        document.querySelector("#" + section)
+                .appendChild(document.importNode(
+                        document.querySelectorAll('link[rel="import"]')[i].import.querySelector('template').content, true));
+    }
+
+    window.addEventListener('HTMLImportsLoaded', function (e) {
+        console.log('Loaded import: ');
+        insertSection('header',0);
+        insertSection('showreal',1);
+        insertSection('portfolio',2);
+        insertSection('price',3);
+        insertSection('review',4);
+        insertSection('contact',5);
+        insertSection('footer',6);
+
+        initSliders();
+
+    });
+    $(document).on('show.bs.modal', '.modal', function(){
+        var data = $(this).data('src');
+        $(this).find('iframe').attr('src', data);
+    });
+    $(document).on('hidden.bs.modal','.modal', function () {
+        var frame = $(this).find('iframe'),
+                attr = frame.attr('src');
+        frame.attr('src', attr);
+    });
+
+</script>
+<script src="js/calculator.js"></script>
+</body>
+</html>

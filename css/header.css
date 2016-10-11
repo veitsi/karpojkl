@@ -1,0 +1,50 @@
+/*=====================HEADER=============================*/
+@import url(https://fonts.googleapis.com/css?family=Play);
+
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.navbar-inverse/*, .navbar-collapse, .navbar-inverse, .navbar-form*/{
+    background-color: #e6e2e7;
+    border: none;
+}
+
+header>a{
+    border: 1px solid white;
+    padding: 10px 40px;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+    color: #333333;
+}
+
+header li{
+    font-size: 20px;
+    font-family: 'Play', sans-serif;
+    color: #333333;
+}
+
+/*.logo:before{
+    content: url(https://psv4.vk.me/c415321/u133419993/docs/c7fc9c9fcc85/logo.png?extra=QwHUWWf-VfOZ9Xa8SlzH0KwEgftial6GTloryOVy5R3k-XErLp3BOpR55HUPWjZ1kg4TiO5IUcEhGhsxvR8N6nhuQaKNfbSRFFLj5GQXQt6YwvtG2YhoDw);
+    display: inline-block;
+    width: 10;
+}*/
+
+.tel, .logo{
+    font-size: 20px;
+    font-family: 'Play', sans-serif;
+    color: #8f84aa;
+}
+header li:hover{
+    border-bottom: 2px solid #333;  
+}
+header li a:hover{
+    color: #333 !Important;
+}
+
+@media(max-width: 994px){
+    .tel{display: none;}
+}

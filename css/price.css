@@ -1,0 +1,340 @@
+@import url(https://fonts.googleapis.com/css?family=Play|PT+Sans+Caption);
+/*=========================Price============================*/
+
+.price{
+    font-family: 'Andika', sans-serif;
+    font-size: 12pt;
+    /*background: #eeeff0; */
+}
+
+.price .container_service {
+    max-width: 1140px;
+    background: #e4e1eb;
+    margin: auto;
+    height: 920px;
+}
+
+.price .container_service_btn {
+   max-width: 1140px;
+   width: 100%;
+    /*background: #e4e1eb;*/
+    margin: auto;
+
+}
+
+
+.serv{
+    width:25%;
+}
+.card-wrap{
+    padding: 0 30px;
+    padding-top: 15px;
+}
+.card{
+    float: left;
+    width: 350px;
+    height: 550px;
+    background: #fff;
+    margin-right:15px;
+    position: relative;
+
+}
+.card:last-of-type{
+    margin-right:0;
+}
+.card .card-head{
+    /*height: 120px;*/
+    padding: 20px;
+}
+.card-body ul{
+    /*padding: 20px;*/
+    
+}
+.card .card-head h2{
+    margin: 0;
+    /*line-height: 60px;*/
+    font-size: 20px;
+    color: #ffffff;
+    font-family: 'Play', sans-serif;
+}
+.card .card-head h4{
+    font-size: 24px;
+    color: #ffffff;
+    margin: 10px 0 0 0;
+    font-family: 'Play', sans-serif;
+}
+.price h3{
+    font-family: 'Play', sans-serif;
+    font-size: 20px;
+    color: #333;
+    display: inline-block;
+}
+.price span{
+    font-family: 'Play', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+h1, h2, h3, h4{        
+    text-transform: uppercase;
+}
+.tab-links{
+    padding-right: 0;
+}
+.btn{
+    text-align: center;
+}
+.price ul{
+    text-align: left;
+    list-style-type: none;
+    padding: 20px;
+}
+.price ul img{
+    width: 20%;
+    height: auto;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+.price .card-body li{
+    margin: 0;
+}
+.addBlockOne ul, .addBlockTwo ul{
+    margin-top: 14px;
+    text-align: center;
+}
+.addBlockOne li, .addBlockTwo li{
+    padding-bottom: 10px;
+}
+
+h2{
+    text-align: center;
+}
+.addBlock > h3{
+    text-align: center;
+    display: block;
+}
+h4{
+    text-align: center;
+}
+.green{
+    background: #7ea97d;
+}
+.blue{
+    background: #8d9ebd;
+}
+.purple{
+    background: #7d7eab;
+}
+.grey{
+    background: #9b90a4;
+}
+.card-footer .btn{
+    display: block;
+    min-height: 40px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+.btn .button{
+    color: #ffffff;
+}
+.card-footer{
+    bottom:0;
+    right: 0;
+    left: 0;
+    position: absolute;
+}
+.addBlock{
+    width: 100%;
+}
+.addBlockOne{
+    width: 50%;
+    float: left;
+}
+.addBlockTwo{
+    width: 50%;
+    float: right;
+}
+.promo{
+    width: 100%;
+    height: 120%;
+    word-break: 100%;
+/*    background-color: #d9d7df;*/
+    text-align: center;
+}
+.promo p{
+    padding: 10px;
+    font-family: 'PT Sans Caption', sans-serif;
+    color: #333333;
+}
+@media (max-width: 1024px) {
+    .card {
+        float: left;
+        width: 280px;
+        height: 500px;
+        background: #fff;
+        margin-right: 10px;
+        position: relative;
+    }
+    .card .card-head h2{
+        margin: 0;
+        line-height: 65px;
+        font-size: 24px;
+    }
+
+}
+@media (max-width: 768px) {
+    .card {
+        float: left;
+        width: 200px;
+        height: 500px;
+        background: #fff;
+        margin-right: 10px;
+        position: relative;
+    }
+    .card .card-head h2{
+        margin: 0;
+        line-height: 30px;
+        font-size: 24px;
+    }
+
+}
+@media (max-width: 425px) {
+    .card {
+        float: left;
+        width: 250px;
+        height: 500px;
+        background: #fff;
+        margin-top: 10px;
+        margin-left: 30px;
+        position: relative;
+
+    }
+    .card .card-head h2{
+        margin: 0;
+        line-height: 30px;
+        font-size: 24px;
+    }
+
+}
+
+/*------------------------------------------VT added code for calculator*/
+#edit_price .container-calculator {
+    background: #e4e1eb;
+    padding-bottom: 50px;
+    font-family: arial, sans-serif;
+}
+
+#edit_price .container-calculator .row {
+    padding: 5px 0;
+}
+
+#edit_price .col-xs-4 {
+    padding-left: 5%;
+}
+
+
+#edit_price h2{
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+#edit_price #inp_clip_name {
+    width: 100%;
+}
+
+#edit_price #inp_clip_name::-webkit-input-placeholder {
+    padding-left: 5%;
+}
+
+#edit_price #inp_clip_name::-moz-placeholder {
+    padding-left: 5%;
+}
+
+#edit_price #inp_clip_name:-ms-input-placeholder {
+    padding-left: 5%;
+}
+
+#edit_price #inp_clip_name::placeholder {
+    padding-left: 5%;
+}
+
+#edit_price .slider {
+    margin: 5px 0;
+}
+
+#edit_price #price_label {
+    text-transform: uppercase;
+}
+
+#edit_price #price_amount {
+    font-size: 20px;
+} 
+
+#edit_price #btn_calculator {
+    height: 80px;
+    background: #928ba2;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+
+}
+
+#edit_price .slider_labels {
+    position: relative;
+} 
+
+#edit_price .slider_label_left {
+    position: absolute;
+    left: 0;
+}
+
+#edit_price .slider_label_center {
+    position: absolute;
+    left: 42%;
+}
+
+#edit_price .slider_label_right {
+    position: absolute;
+    right: 0;
+}
+
+#edit_price .slider4_label{
+    position: absolute;
+}
+
+#edit_price .slider4_label1{
+    left: 0;
+}
+
+#edit_price .slider4_label2{
+    left: 20%;
+}
+
+#edit_price .slider4_label3{
+    left: 43%;
+}
+
+#edit_price .slider4_label4{
+    left: 68%;
+}
+
+#edit_price .slider4_label5{
+    left: 88%;
+}
+
+ 
+/*------------from Pasha*/
+div.order{
+    background: #fff;
+    padding-top: 150px!Important;
+    margin: 30px;
+}
+.order-head{
+    border-bottom: 1px solid black;
+}
+.inform{
+    width: 500px;
+    height: 50px;
+}
