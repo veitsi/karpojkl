@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-![Видеограф](images/videograf.jpg)
+![Видеограф]({{ site.baseurl }}/images/videograf.jpg)
 Some information about you!
 
 ### More Information
