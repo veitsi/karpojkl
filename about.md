@@ -4,6 +4,7 @@ title: About
 permalink: /about/
 ---
 
+![Видеограф](images/videograf.jpg)
 Some information about you!
 
 ### More Information
