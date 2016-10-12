@@ -1,12 +1,18 @@
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Створюємо яскраві відео ваших моментів. KarpenkoArt Production
-email: karpenko.art@gmail.com
+contact:
+ email: karpenko.art@gmail.com
+ phone1: "+38097 360 72 25"
+ phone2: "+38050 621 01 26"
+ fb: https://www.facebook.com/karpucci/
+ youtube: https://www.youtube.com/channel/UCPulPn_niXtchHNWykcoBbw
+ vimeo: https://vimeo.com/vidima
+ instagram: https://www.instagram.com/karpenkoart/
+
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -14,6 +20,8 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://veitsi.github.io/karpojkl/ # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  veitsi
+
+
 
 # Build settings
 markdown: kramdown
