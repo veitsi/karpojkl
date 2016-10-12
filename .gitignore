@@ -1,11 +1,8 @@
-.idea/
 _site
-.DS_Store
-.jekyll
-.jekyll-metadata
-.bundle
 .sass-cache
+.jekyll-metadata
+.idea/
 Gemfile
 Gemfile.lock
-node_modules
-package.json
+bower_components/
+index.md
